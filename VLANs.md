@@ -24,6 +24,13 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# exit
 ```
 
+## Router - virtual interfaces, 802.1q trunking
+```
+RX1(config)#interface fastEthernet 0/1.10 		// VLAN 10  
+RX1(config-subif)#encapsulation dot1Q 10 		// VLAN 10
+```
+
+
 
 # Troubleshooting
 | Command | Description |

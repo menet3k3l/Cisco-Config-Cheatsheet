@@ -16,10 +16,13 @@
 
 # Telnet access
 ```
-Switch# configure terminal  
+Switch# configure terminal 
+Switch(config)# enable secret <password>	// password for privileged mode
 Switch(config)# line vty 0 4		// VTY 0-4 config  
-Switch(config-line)# login 			// will require a password <password> when connecting via TELNET  
+Switch(config-line)# login 		// will require a password <password> when connecting via TELNET  
 Switch(config-line)#password <password> // specifies the TELNET password
 ```
+
+
 
 

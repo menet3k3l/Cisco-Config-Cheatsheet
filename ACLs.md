@@ -166,7 +166,7 @@ Router(config-if)#ip access-group ACL_Number_name in|Out
 ```
 
 
-#	3 Delete ACL
+# 3	Delete ACL
 
 **For standard approach**
 ```

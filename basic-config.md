@@ -1,4 +1,4 @@
-# Modes
+# 1	Modes
 
 | Command | Description |
 | -----------|-------------|
@@ -6,7 +6,7 @@
 | # ***configure terminal*** | Enter configuration mode |
 | (config)# ***interface \<ID>*** | Enter interface mode |
 
-# Basic config
+# 2	Basic config
 | Command | Description |
 | -----------| ------------ |
 | (config)# ***hostname \<HOSTNAME>*** | Configure hostname |
@@ -14,7 +14,7 @@
 | (config-if)# ***shutdown*** | Disable interface |
 | (config-if)# ***no shutdown*** | Enable interface |
 
-### Serial interface config
+## 2.1	Serial interface config
 ```
 Router# configure terminal  
 Router(config)# interface <serial_ID>  
@@ -22,7 +22,7 @@ Router(config-if)# clock rate <64000> // DCE -setting serial speed to 64 kbit/s
 Router(config-if)# no shutdown  
 Router(config-if)# end
 ```
-### Telnet access
+## 2.2	Telnet access
 ```
 Switch# configure terminal 
 Switch(config)# enable secret <password>	// password for privileged mode
@@ -31,7 +31,7 @@ Switch(config-line)# login 		// will require a password <password> when connecti
 Switch(config-line)#password <password> // specifies the TELNET password
 ```
 
-### Interface description
+## 2.3	Interface description
 ```
 RX1#configure terminal    
 RX1(config)#interface <interface_ID>  

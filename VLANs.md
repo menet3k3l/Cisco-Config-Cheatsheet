@@ -1,5 +1,5 @@
-# VLAN config
-## Creating VLAN
+# 1	VLAN config
+## 1.1	Creating VLAN
 ```
 Switch# configure terminal  
 Switch(config)# vlan <vlan_ID>		// creating VLAN with <ID> (number)  
@@ -7,7 +7,7 @@ Switch(config-vlan)# name <VLAN_NAME> //  assigning a name to created VLAN
 Switch(config-vlan)# end
 ```
 
-## Interface ACCESS mode and VLAN assignment
+## 1.2	Interface ACCESS mode and VLAN assignment
 ```
 Switch# configure terminal  
 Switch(config)# interface <interface_ID>  
@@ -16,7 +16,7 @@ Switch(config-if)# switchport access vlan <vlan_ID>	// vlan assignment
 Switch(config-if)# exit
 ```
 
-## TRUNK mode
+## 1.3	TRUNK mode
 ```
 Switch# configure terminal  
 Switch(config)# interface <interface_ID>  
@@ -24,7 +24,7 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# exit
 ```
 
-## Router - virtual interfaces, 802.1q trunking
+## 1.4	Router - virtual interfaces, 802.1q trunking
 ```
 RX1(config)#interface fastEthernet 0/1.10 		// VLAN 10  
 RX1(config-subif)#encapsulation dot1Q 10 		// VLAN 10
@@ -32,7 +32,7 @@ RX1(config-subif)#encapsulation dot1Q 10 		// VLAN 10
 
 
 
-# Troubleshooting
+# 2	VLAN troubleshooting
 | Command | Description |
 | ---------- | ----------- |
 | # show running-config | Prints current configuration |

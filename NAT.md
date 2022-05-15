@@ -34,5 +34,5 @@ Gateway(config)# ip nat inside source list 1 interface <outside_interface> overl
 # 3	NAT Troubleshooting
 | Command | Description |
 | - | - |
-| # show ip nat statistics | Literally statistics about configured NAT |
-| # show ip nat translations | Displays IPs for NAT translations |
+| # ***show ip nat statistics*** | Literally statistics about configured NAT |
+| # ***show ip nat translations*** | Displays IPs for NAT translations |

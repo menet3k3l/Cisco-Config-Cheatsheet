@@ -30,7 +30,7 @@ R1(config-router)#default-information originate
 
 
 
-# 2	Routing troubleshooting
+# 2	Routing Troubleshooting
 | Command | Description |
 | -----------| -----------|
 | # ***show running-config*** | Prints current configuration |

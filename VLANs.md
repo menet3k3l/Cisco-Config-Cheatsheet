@@ -32,7 +32,7 @@ RX1(config-subif)#encapsulation dot1Q 10 		// VLAN 10
 
 
 
-# 2	VLAN troubleshooting
+# 2	VLAN Troubleshooting
 | Command | Description |
 | ---------- | ----------- |
 | # ***show running-config*** | Prints current configuration |

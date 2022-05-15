@@ -37,3 +37,15 @@ RX1#configure terminal
 RX1(config)#interface <interface_ID>  
 RX1(config-if)#description <DESCRIPTION>
 ```
+
+## 2.4	Some stuff that's good just to be sure?
+- Synchronised console output
+```
+Router(config)#line console 0  
+Router(config-line)#logging synchronous
+```
+
+- Disable automatic domain name to IP translation
+```
+Router(config)#no ip domain-lookup
+```

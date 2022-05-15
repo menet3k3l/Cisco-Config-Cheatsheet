@@ -35,8 +35,8 @@ RX1(config-subif)#encapsulation dot1Q 10 		// VLAN 10
 # 2	VLAN troubleshooting
 | Command | Description |
 | ---------- | ----------- |
-| # show running-config | Prints current configuration |
-| # show ip interface brief | Info about all interfaces |
-| # show vlan | VLAN table and assigned interfaces |
-| # show mac address-table | Prints MAC table |
-| # show interfaces status | Status of all interfaces |
+| # ***show running-config*** | Prints current configuration |
+| # ***show ip interface brief*** | Info about all interfaces |
+| # ***show vlan*** | VLAN table and assigned interfaces |
+| # ***show mac address-table*** | Prints MAC table |
+| # ***show interfaces status*** | Status of all interfaces |

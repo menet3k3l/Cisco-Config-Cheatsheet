@@ -14,6 +14,22 @@ RX1(config-router)#no auto-summary
 RX1(config-router)#end
 ```
 
+- the `network` commands basically advertises specified networks
+
+**Default route in RIP**
+- First add static default route
+```
+R1(config)#ip route 0.0.0.0 0.0.0.0 <NEXT_HOP>/<OUTGOING_INTERFACE>
+```
+
+- Then advertise it to others with RIP
+```
+R1(config)#router rip
+R1(config-router)#default-information originate 
+```
+
+
+
 # 2	Routing troubleshooting
 | Command | Description |
 | -----------| -----------|

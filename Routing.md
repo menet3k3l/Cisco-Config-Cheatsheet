@@ -17,10 +17,10 @@ RX1(config-router)#end
 # Troubleshooting
 | Command | Description |
 | -----------| -----------|
-| # show running-config | Prints current configuration |
-| # show ip interface brief | Info about all interfaces |
-| # show ip route | Prints routing table |
-| # show ip protocols | Info about configured routing protocols |
-| # show cdp neighbors | Info about connected (neighbor) devices |
+| # ***show running-config*** | Prints current configuration |
+| # ***show ip interface brief*** | Info about all interfaces |
+| # ***show ip route*** | Prints routing table |
+| # ***show ip protocols*** | Info about configured routing protocols |
+| # ***show cdp neighbors*** | Info about connected (neighbor) devices |
 
 

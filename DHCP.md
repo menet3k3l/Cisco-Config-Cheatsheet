@@ -18,6 +18,24 @@ R1(dhcp-config)#default-router 192.168.0.1
 R1(dhcp-config)#dns-server 192.168.0.1
 ```
 
+
+# 1.1	DHCP helper
+- Used when I want to use a "remote" DHCP server
+
+**Situation**
+- I have 2 PCs connected to the R1 router
+- There's an "external" DHCP server connected to the R1 router
+- I want to use the "external" DHCP server for those 2 PCs, I don't wanna configure DHCP on R1
+
+```
+R1(config)# interface <interface_connected_to_client_1>
+R1(config-if)# ip helper-address <DHCP_server_IP>
+R1(config-if)# exit
+R1(config)# interface <interface_connected_to_client_2>
+R1(config-if)# ip helper-address <DHCP_server_IP>
+```
+
+
 # 2	DHCP Troubleshooting
 | Command | Description |
 | - | - |
